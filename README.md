@@ -1,5 +1,26 @@
 # Symfony 4 Auth
 
+
+Este proyecto es una "prueba de concepto" para demostrar cómo construir un sistema de autenticación con Symfony 4 sin dependencias (como FOSUserBundle).
+
+Cubre las siguientes características:
+
+- Registro de usuario, iniciando sesión automáticamente y redirigiéndolo a la página de inicio con un mensaje flash
+- Inicio de sesión de usuario con correo electrónico
+- Opción Recordarme disponible en el formulario de inicio de sesión
+- Configura automáticamente la marca de tiempo created_at del usuario al registrarse usando los eventos del ciclo de vida de Doctrine
+- Oyente para evitar que el usuario regrese a páginas anónimas cuando inicie sesión
+- Oyente para actualizar automáticamente la última marca de tiempo de inicio de sesión del usuario en cada autenticación exitosa
+- Gestión de activos con [@symfony/webpack-encore](https://symfony.com/doc/current/frontend.html)
+
+La información y colaboración corresponden a @fidan. Información clonada para aplicaciones de Login.
+
+Atentamente, Miguel Alvarez.
+alvarezgalea@gmail.com
+
+
+ENGLISH VERSION....
+
 [![Build Status](https://travis-ci.com/fidanf/symfony4-auth.svg?branch=master)](https://travis-ci.com/fidanf/symfony4-auth)
 
 This project is a "proof of concept" to demonstrate how to build an authentication system with Symfony 4 using no dependencies (such as FOSUserBundle).
